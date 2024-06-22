@@ -259,6 +259,14 @@ export async function setupTrayMenu() {
       app.exit(0);
     },
   });
+  /** 让退出的按钮不至于太靠近底部 **/
+  ctxMenu.push({
+    label: "",
+	enabled: false,
+    click() {
+     
+    },
+  });
 
   tray.setContextMenu(Menu.buildFromTemplate(ctxMenu));
 }

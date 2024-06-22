@@ -18,8 +18,7 @@ let mainWindow: BrowserWindow | null = null;
 export const createMainWindow = (): BrowserWindow => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    height: 700,
-    width: 1050,
+	show: false,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
       nodeIntegration: true,
@@ -28,10 +27,12 @@ export const createMainWindow = (): BrowserWindow => {
       sandbox: false,
       webviewTag: true,
     },
-    resizable: false,
     frame: false,
     icon: nativeImage.createFromPath(getResPath("logo.png")),
   });
+  // 默认最大化窗口显示
+  mainWindow.maximize(); 
+  mainWindow.show();
 
   registerMainWindow(mainWindow);
 

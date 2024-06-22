@@ -1,7 +1,7 @@
 {
   "name": "musicfree-desktop",
   "productName": "MusicFree",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "一个插件化的音乐播放器",
   "main": ".webpack/main",
   "scripts": {
@@ -16,8 +16,8 @@
   },
   "keywords": [],
   "author": {
-    "name": "猫头猫",
-    "email": "lhx_xjtu@163.com"
+    "name": "wan",
+    "email": ""
   },
   "license": "GPL",
   "lint-staged": {

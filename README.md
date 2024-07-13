@@ -134,8 +134,12 @@ config.json 是一个配置文件。
 下载仓库代码之后，在根目录下执行：
 
 ```bash
+安装依赖
 npm install
+启动项目
 npm start
+打包成可运行文件（没有安装引导程序）
+npm run package
 ```
 
 ## 支持这个项目
